@@ -1,0 +1,5 @@
+classes = 1
+train  = /home/pavan/projects/PeopleCounter/DataSet/person_train.txt
+valid  = /home/pavan/projects/PeopleCounter/DataSet/person_test.txt
+names = /home/pavan/projects/PeopleCounter/TrainingAndTesting/classes.names
+backup = /home/pavan/projects/PeopleCounter/TrainingAndTesting/weights/
