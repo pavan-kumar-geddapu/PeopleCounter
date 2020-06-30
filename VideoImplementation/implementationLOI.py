@@ -49,13 +49,9 @@ ap.add_argument("-t", "--threshold", type=float, default=0.3, help="threshold wh
 args = vars(ap.parse_args())
 
 
-#labelsPath = '/home/pavan/projects/PeopleCounter/TrainingAndTesting/classes.names'
-#config_file_abs_path = "/home/pavan/projects/PeopleCounter/TrainingAndTesting/darknet-yolov3.cfg"
-#weights_file_abs_path = "/home/pavan/projects/PeopleCounter/TrainingAndTesting/weights/darknet-yolov3_400.weights"
-
-labelsPath = '/home/pavan/projects/PeopleCounter/VideoImplementation/yolo-coco/coco.names'
-config_file_abs_path = "/home/pavan/projects/PeopleCounter/VideoImplementation/yolo-coco/yolov3.cfg"
-weights_file_abs_path = "/home/pavan/projects/PeopleCounter/VideoImplementation/yolo-coco/yolov3.weights"
+labelsPath = '/home/pavan/projects/PeopleCounter/TrainingAndTesting/classes.names'
+config_file_abs_path = "/home/pavan/projects/PeopleCounter/TrainingAndTesting/darknet-yolov3.cfg"
+weights_file_abs_path = "/home/pavan/projects/PeopleCounter/TrainingAndTesting/weights/darknet-yolov3_final.weights"
 
 LABELS = open(labelsPath).read().strip().split("\n")
 
