@@ -41,7 +41,7 @@ you can plot loss curve using **train.log** data.
 ```
 python3 plotTrainLoss.py /home/pavan/projects/PeopleCounter/TrainingAndTesting/train.log
 ```
-final weights will be stored in weights folder.
+final weights will be stored in weights folder. You have to create a weights folder before implementing above steps.
 
 ## Testing The Model
 ```
@@ -61,3 +61,4 @@ Implementation for Region of interest algorithm
 ```
 python3 implementationROI.py --input input/test_video_1.mp4 --output output/test_video_1/ROI/test_video_1.avi
 ```
+You can download coco dataset (which includes trained weights, configuration file, 80 different classes) to compare your version with it.
