@@ -1,5 +1,7 @@
 # PEOPLE COUNTER
 
+Detecting and counting people from a surveillance video footage using YOLOv3 neural net framework.
+
 ## Dataset Building
 Get the relevant OpenImages files needed to locate images of our interest
 ```
