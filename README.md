@@ -14,7 +14,7 @@ python3 getDataFromOpenImages_person.py
 ```
 splitting training and testing data. This will split image paths into two text files **person_train.txt** and ** person_test.txt**
 ```
-python3 splitTrainAndTest.py /home/pavan/projects/PeopleCounter/DataSet/JPEGImages
+python3 splitTrainAndTest.py <Path>/PeopleCounter/DataSet/JPEGImages
 ```
 
 ## Installing Darknet
@@ -33,15 +33,15 @@ wget https://pjreddie.com/media/files/darknet53.conv.74 -O ~/darknet/darknet53.c
 fill correct paths in **darknet.data** 
 ```
 cd ~/darknet
-./darknet detector train /home/pavan/projects/PeopleCounter/TrainingAndTesting/darknet.data /home/pavan/projects/PeopleCounter/TrainingAndTesting/darknet-yolov3.cfg ./darknet53.conv.74 > /home/pavan/projects/PeopleCounter/TrainingAndTesting/train.log
+./darknet detector train <Path>/PeopleCounter/TrainingAndTesting/darknet.data <Path>/PeopleCounter/TrainingAndTesting/darknet-yolov3.cfg ./darknet53.conv.74 > <Path>/PeopleCounter/TrainingAndTesting/train.log
 ```
 you can check the training log using this command 
 ```
-grep "avg" /home/pavan/projects/PeopleCounter/TrainingAndTesting/train.log
+grep "avg" <Path>/PeopleCounter/TrainingAndTesting/train.log
 ```
 you can plot loss curve using **train.log** data.
 ```
-python3 plotTrainLoss.py /home/pavan/projects/PeopleCounter/TrainingAndTesting/train.log
+python3 plotTrainLoss.py <Path>/PeopleCounter/TrainingAndTesting/train.log
 ```
 final weights will be stored in weights folder. You have to create a weights folder before implementing above steps.
 
