@@ -10,7 +10,7 @@ wget https://storage.googleapis.com/openimages/2018_04/train/train-annotations-b
 ```
 Download the images from OpenImagesV4 . This will download the images into **JPEGImages** folder and corresponding label files into **lables** folder. Here you can use your own data by just keeping relevant files in those two folders.
 ```
-python3 getDataFromOpenImages_snowman.py
+python3 getDataFromOpenImages_person.py
 ```
 splitting training and testing data. This will split image paths into two text files **person_train.txt** and ** person_test.txt**
 ```
