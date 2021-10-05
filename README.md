@@ -2,8 +2,6 @@
 
 Detecting and counting people from a surveillance video footage using YOLOv3 neural net framework.
 
-Inspired by : https://www.learnopencv.com/training-yolov3-deep-learning-based-custom-object-detector/
-
 ## Dataset Building
 Get the relevant OpenImages files needed to locate images of our interest
 ```
